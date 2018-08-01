@@ -12,13 +12,13 @@ It was classified using a version of Dan Buscomb's ```int_seg_crf_v1.py``` routi
 The results were saved as a .mat file.
 
 Steps are:
- * Load the image and make lat/lon coordinate arrays
- * Make a look-up table to convert classes to Manning's n
+ * Load the image and determine projection and coordinates
  * Load the .mat file produced by ```int_seg_crf```
+ * Make a look-up table to convert classes to Manning's n
  * Use the lookup table to create a grid of roughness values
  * [Smooth or edit the roughness array?]
- * Load the model grid coordinate
- * Transform model grid coordinates to lat/lon
+ * Load the model grid coordinates
+ * Transform model grid coordinates projection of roughness array
  * Interpolate roughness values onto model grid
  * Save model grid
  
