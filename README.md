@@ -13,7 +13,7 @@ The results were saved as a .mat file.
 
 Steps are:
  * Load the image and make lat/lon coordinate arrays
- * Make a look-up table to convert classes to Manning's $n$
+ * Make a look-up table to convert classes to Manning's n
  * Load the .mat file produced by ```int_seg_crf```
  * Use the lookup table to create a grid of roughness values
  * [Smooth or edit the roughness array?]
